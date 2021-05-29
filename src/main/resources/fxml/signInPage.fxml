@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" styleClass="container" stylesheets="@../css/MainContainer.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nure.ua.client.controller.impl.SignInControllerImpl">
+   <children>
+       <AnchorPane layoutX="494.0" layoutY="152.0" prefHeight="386.0" prefWidth="379.0" styleClass="container" stylesheets="@../css/SignInContainer.css">
+           <effect>
+               <DropShadow color="#eeeeee" height="50.0" radius="24.5" width="50.0" />
+           </effect>
+          <children>
+              <Label alignment="CENTER" layoutY="40.0" prefHeight="40.0" prefWidth="379.0" styleClass="header" text="Sign in" textAlignment="CENTER" />
+              <Label alignment="CENTER" layoutY="130.0" prefHeight="25.0" prefWidth="379.0" styleClass="infoLabel" text="Phone number" />
+              <Label layoutX="31.0" layoutY="340.0" prefHeight="17.0" prefWidth="242.0" styleClass="infoLinkLabel" text="Don't have a Diregram account?" />
+              <Label id="toSignUp" layoutX="235.0" layoutY="340.0" onMouseClicked="#toSignUpEvent" prefHeight="17.0" prefWidth="122.0" styleClass="linkLabel" text="Sign up, It's free!" underline="true">
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+              </Label>
+              <Label fx:id="signInExceptionLabel" alignment="CENTER" layoutY="90.0" prefHeight="25.0" prefWidth="379.0" styleClass="exceptionLabel" text="EXCEPTION EXCEPTION EXCEPTION" visible="false" />
+              <Label alignment="CENTER" layoutY="210.0" prefHeight="25.0" prefWidth="379.0" styleClass="infoLabel" text="Password" />
+              <TextField fx:id="signInPhone" alignment="CENTER" focusTraversable="false" layoutX="84.0" layoutY="170.0" prefHeight="25.0" prefWidth="209.0">
+                  <cursor>
+                      <Cursor fx:constant="TEXT" />
+                  </cursor>
+              </TextField>
+              <Button layoutX="103.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signInEvent" prefHeight="34.0" prefWidth="179.0" text="Sign In">
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+              </Button>
+              <PasswordField fx:id="signInPassword" alignment="CENTER" layoutX="84.0" layoutY="250.0" prefHeight="25.0" prefWidth="209.0" />
+          </children>
+       </AnchorPane>
+   </children>
+</AnchorPane>

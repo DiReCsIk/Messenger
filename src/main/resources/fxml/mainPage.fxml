@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1366.0" stylesheets="@../css/MainForm.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nure.ua.client.controller.impl.MainControllerImpl">
+    <left>
+        <BorderPane prefHeight="700.0" prefWidth="306.0" styleClass="leftPart" BorderPane.alignment="CENTER">
+            <top>
+                <AnchorPane prefHeight="53.0" prefWidth="306.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../image/menuIcon.png"/>
+                            </image>
+                            <effect>
+                                <Lighting>
+                                    <bumpInput>
+                                        <Shadow/>
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant/>
+                                    </light>
+                                </Lighting>
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </ImageView>
+                        <TextField fx:id="addUserTextField" layoutX="61.0" layoutY="12.0" prefHeight="25.0"
+                                   prefWidth="188.0"/>
+                        <ImageView fx:id="addUserButton" fitHeight="30.0" fitWidth="30.0" layoutX="262.0" layoutY="10.0"
+                                   onMouseClicked="#addUser" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/loop.png"/>
+                            </image>
+                            <effect>
+                                <Lighting bumpInput="$null">
+                                    <light>
+                                        <Light.Distant/>
+                                    </light>
+                                </Lighting>
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </ImageView>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT"/>
+                    </cursor>
+                </AnchorPane>
+            </top>
+            <center>
+                <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="306.0" styleClass="leftPart"
+                            vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+                    <content>
+                        <VBox fx:id="userChatsBox" prefHeight="646.0" prefWidth="305.0" styleClass="leftPart"/>
+                    </content>
+                </ScrollPane>
+            </center>
+        </BorderPane>
+    </left>
+    <center>
+        <BorderPane prefHeight="700.0" prefWidth="1048.0" styleClass="rightPart" BorderPane.alignment="CENTER">
+            <center>
+                <ScrollPane fx:id="messageScrollPane" hbarPolicy="NEVER" prefHeight="349.0" prefWidth="1060.0"
+                            styleClass="rightPart" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+                    <content>
+                        <AnchorPane fx:id="messageAnchorPane" prefHeight="640.0" prefWidth="1060.0"
+                                    styleClass="rightPart"/>
+                    </content>
+                </ScrollPane>
+            </center>
+            <bottom>
+                <AnchorPane prefHeight="60.0" prefWidth="1060.0" styleClass="bottomBar" BorderPane.alignment="CENTER">
+                    <children>
+                        <TextField fx:id="userInput" layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="980.0"/>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1010.0" layoutY="10.0"
+                                   onMouseClicked="#sendMessage" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/arrow.png"/>
+                            </image>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </bottom>
+        </BorderPane>
+    </center>
+</BorderPane>

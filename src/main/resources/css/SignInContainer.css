@@ -1,0 +1,49 @@
+.container {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 6%;
+}
+
+.header {
+    -fx-text-fill: #00adb5;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Cambria";
+}
+
+.infoLabel {
+    -fx-text-fill: #222831;
+    -fx-font-size: 20px;
+    -fx-font-family: "Cambria";
+}
+
+.infoLinkLabel {
+    -fx-text-fill: #222831;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+
+.linkLabel {
+    -fx-text-fill: #00adb5;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+}
+
+.exceptionLabel {
+    -fx-text-fill: crimson;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+}
+
+.date-picker > .text-field  {
+    -fx-alignment: center;
+}
+.button {
+    -fx-background-color: #00adb5;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #eeeeee;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+    -fx-font-size: 16px;
+}

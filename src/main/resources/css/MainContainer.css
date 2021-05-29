@@ -1,0 +1,18 @@
+.container{
+    -fx-background-color: #222831;
+    /**
+    00adb5
+     */
+}
+/*
+.chatScene {
+    -fx-border-color: #00adb5;
+    -fx-border-width: 0 3 0 0;
+    !*-fx-color: #00ad5;*!
+}
+.menuButton{
+    !*-fx-background-image: url("../Image/menuIcon.png");*!
+    -fx-background-color: transparent;
+    -fx-background-radius: 24px;
+}
+*/

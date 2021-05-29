@@ -1,0 +1,70 @@
+.container {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 6%;
+}
+
+.header {
+    -fx-text-fill: #00adb5;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Cambria";
+}
+
+.infoLabel {
+    -fx-text-fill: #222831;
+    -fx-font-size: 20px;
+    -fx-font-family: "Cambria";
+}
+
+.infoLinkLabel {
+    -fx-text-fill: #222831;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+
+.linkLabel {
+    -fx-text-fill: #00adb5;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+}
+
+.exceptionLabel {
+    -fx-text-fill: crimson;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+}
+
+.text-field {
+    -fx-alignment: center;
+}
+
+.date-picker > .text-field {
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-background-color: #00adb5;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #eeeeee;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+    -fx-font-size: 16px;
+}
+
+.requiredTextFields {
+    -fx-background-image: url(../image/required.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 98%;
+    -fx-padding: 0 20px 0 0;
+    -fx-background-size: auto 65%;
+}
+
+.invalidTextField {
+    -fx-border-color: rgba(220, 20, 60, 0.7);
+}
+
+.validTextField {
+    -fx-border-color: rgba(173, 255, 47, 0.7);
+}

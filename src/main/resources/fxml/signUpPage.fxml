@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="1366.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1366.0" styleClass="container" stylesheets="@../css/MainContainer.css"
+            xmlns="http://javafx.com/javafx/16" fx:controller="com.nure.ua.client.controller.impl.SignUpControllerImpl"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="signUpPane" layoutX="430.0" layoutY="65.0" prefHeight="583.0" prefWidth="507.0"
+                styleClass="container" stylesheets="@../css/SignUpContainer.css">
+        <effect>
+            <DropShadow color="#eeeeee" height="50.0" radius="24.5" width="50.0"/>
+        </effect>
+        <Label alignment="CENTER" layoutX="334.0" layoutY="545.0" onMouseClicked="#toSignInEvent"
+               prefHeight="25.0" prefWidth="56.0" styleClass="linkLabel" text="sign in!" underline="true">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Label>
+        <Label alignment="CENTER" layoutY="20.0" prefHeight="40.0" prefWidth="507.0" styleClass="header"
+               text="Create Account"/>
+        <Label alignment="CENTER" layoutX="93.0" layoutY="100.0" prefHeight="25.0" prefWidth="130.0"
+               styleClass="infoLabel" text="Your name"/>
+        <Label alignment="CENTER" layoutY="340.0" prefHeight="25.0" prefWidth="507.0" styleClass="infoLabel"
+               text="Your nickname"/>
+        <Label alignment="CENTER" layoutX="294.0" layoutY="100.0" prefHeight="25.0" prefWidth="130.0"
+               styleClass="infoLabel" text="Your surname"/>
+        <Label alignment="CENTER" layoutY="180.0" prefHeight="25.0" prefWidth="507.0" styleClass="infoLabel"
+               text="Your phone number"/>
+        <Label alignment="CENTER" layoutY="420.0" prefHeight="25.0" prefWidth="507.0" styleClass="infoLabel"
+               text="Your birthdate"/>
+        <Label alignment="CENTER" layoutX="85.0" layoutY="260.0" prefHeight="25.0" prefWidth="130.0"
+               styleClass="infoLabel" text="Your password"/>
+        <Label alignment="CENTER" layoutX="280.0" layoutY="260.0" prefHeight="25.0" prefWidth="158.0"
+               styleClass="infoLabel" text="Confirm password"/>
+        <Label fx:id="signUpExceptionLabel" alignment="CENTER" layoutY="70.0" prefHeight="20.0"
+               prefWidth="507.0" styleClass="exceptionLabel" text="EXCEPTION EXCEPTION EXCEPTION"
+               visible="false"/>
+        <TextField fx:id="signUpNicknameField" focusTraversable="false" layoutX="55.0" layoutY="380.0"
+                   prefHeight="25.0" prefWidth="400.0" promptText="myNickname">
+            <styleClass>
+                <String fx:value="requiredTextFields"/>
+                <String fx:value="invalidTextField"/>
+            </styleClass>
+        </TextField>
+        <TextField fx:id="signUpPhoneField" focusTraversable="false" layoutX="55.0" layoutY="220.0"
+                   prefHeight="25.0" prefWidth="400.0" promptText="XXX-XXX-XX-XX">
+            <styleClass>
+                <String fx:value="requiredTextFields"/>
+                <String fx:value="invalidTextField"/>
+            </styleClass>
+        </TextField>
+        <TextField fx:id="signUpSurnameField" focusTraversable="false" layoutX="263.0" layoutY="140.0"
+                   prefHeight="25.0" prefWidth="192.0" promptText="Ivanov">
+            <cursor>
+                <Cursor fx:constant="TEXT"/>
+            </cursor>
+            <styleClass>
+                <String fx:value="requiredTextFields"/>
+                <String fx:value="invalidTextField"/>
+            </styleClass>
+        </TextField>
+        <TextField fx:id="signUpNameField" focusTraversable="false" layoutX="54.0" layoutY="140.0"
+                   prefHeight="25.0" prefWidth="192.0" promptText="Ivan">
+            <cursor>
+                <Cursor fx:constant="TEXT"/>
+            </cursor>
+            <styleClass>
+                <String fx:value="requiredTextFields"/>
+                <String fx:value="invalidTextField"/>
+            </styleClass>
+        </TextField>
+        <PasswordField fx:id="signUpPasswordField" focusTraversable="false" layoutX="54.0" layoutY="300.0"
+                       prefHeight="25.0" prefWidth="192.0" promptText="mySecretPassword123">
+            <styleClass>
+                <String fx:value="requiredTextFields"/>
+                <String fx:value="invalidTextField"/>
+            </styleClass>
+        </PasswordField>
+        <PasswordField fx:id="signUpConfirmPasswordField" focusTraversable="false" layoutX="263.0"
+                       layoutY="300.0" prefHeight="25.0" prefWidth="192.0" promptText="mySecretPassword123">
+            <styleClass>
+                <String fx:value="requiredTextFields"/>
+                <String fx:value="invalidTextField"/>
+            </styleClass>
+        </PasswordField>
+        <DatePicker fx:id="signUpBirthdateField" editable="false" focusTraversable="false" layoutX="55.0"
+                    layoutY="460.0" prefHeight="25.0" prefWidth="400.0" promptText="dd/mm/yyyy"/>
+        <Button layoutX="166.0" layoutY="500.0" mnemonicParsing="false" onAction="#signUpEvent"
+                prefHeight="37.0" prefWidth="179.0" text="Sign Up">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Label alignment="CENTER" layoutX="114.0" layoutY="545.0" prefHeight="25.0" prefWidth="221.0"
+               styleClass="infoLinkLabel" text="Already have an account? You can"/>
+    </AnchorPane>
+</AnchorPane>
